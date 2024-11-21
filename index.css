@@ -33,7 +33,30 @@ header {
 #logo {
     height: 34px;
     width: 23.15px;
-
+}
+.menu-bar {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-bar:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    rotate: 360deg;
+}
+.mini-bar {
+    height: 18px;
+    width: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.line1 {
+    width: 27px;
+    height: 2px;
+    background-color: black;
 }
 .titles {
     height: 24px;
@@ -56,6 +79,9 @@ header {
 #download {
     height: 20px;
     width: 20px;
+}
+#download:hover {
+    transform: scale(1.1);
 }
 #Resume {
     color: white;
@@ -162,6 +188,11 @@ header {
     height: 596px;
     width: 590px;
 }
+.pic-of-mine:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
 .skills-logo1 {
     height: 226px;
     width: 1216px;
@@ -211,6 +242,8 @@ header {
 }
 .logo-back:hover {
     background-color: black;
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 .logo-back:hover .logo-name {
     color: white;
@@ -269,7 +302,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#my {
+#my1 {
     font-size: 48px;
     font-weight: 400;
     color: white;
@@ -311,6 +344,9 @@ header {
 }
 .Google:hover {
     background-color: #71717A;
+    transform: scale(1.05);
+    transition: 0.8s ease;
+    background-image: linear-gradient(red, blue);  
 }
 .google-top {
     height: 32px;
@@ -455,7 +491,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#my {
+#my1 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400px;
@@ -475,6 +511,13 @@ header {
     justify-content: center;
     align-items: center;
 }
+.Project1 {
+    height: 516px;
+    width: 1216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pic-projects {
     height: 476px;
     width: 594px;
@@ -486,6 +529,10 @@ header {
     height: 397px;
     width: 530px;
     overflow: visible;
+}
+.pro-pic:hover {
+    opacity: 0.5;
+    transition: 0.8s ease;
 }
 .list-project{
     height: 302px;
@@ -711,6 +758,12 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.hehe {
+    height: 56px;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+}
 .contact-facebook {
     height: 56px;
     width: 56px;
@@ -850,7 +903,7 @@ header {
     height: 32px;
     width: 608px;
 }
-.number {
+.number1 {
     color: black;
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
@@ -917,4 +970,599 @@ footer {
     line-height: 20px;
     color: white;
     margin: 0;
+}
+@media only screen and (max-width: 375px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 375px;
+    }
+    main {
+        width: 375px;
+
+    }
+    .Resume {
+        display: none;
+    }
+    .title {
+        display: none;
+    }
+    header {
+        height: 72px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titles {
+        height: 36px;
+        width: 36px;
+    }
+    .header-top {
+        height: 40px;
+        width: 343px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .big-container {
+        height: 908px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-container {
+        height: 828px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .pic-of-mine {
+        height: 342px;
+        width: 343px;
+    }
+    .container-name {
+        height: 408px;
+        width: 343px;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .hello {
+        height: 120px;
+        width: 343px;
+    }
+    .sentence {
+        height: 168px;
+        width: 343px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .one {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    .name {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .two {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .three {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    p {
+        margin: 0;
+    }
+    .logos {
+        width: 343px;
+    }
+    .big-experience {
+        height: 1466px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-experience {
+        height: 1383px;
+        width: 343px
+    }
+    .my-experience {
+        height: 72px;
+        width: 343px;
+    }
+    #my {
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        line-height: 32px;
+        color: white;
+    }
+    #expe {
+        font-size: 28px;
+        font-weight: 800px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 32px;
+        color: white;
+    }
+    .tech-conpanies {
+        height: 1294px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Google {
+        height: 424px;
+        width: 341px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    .google-bottom {
+        height: 240px;
+        width: 295px;
+    }
+    .pra-expe {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        height: 240px;
+    }
+    .google-top {
+        height: 98px;
+        width: 295px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .logo-title {
+        height: 48px;
+        width: 295px;
+    }
+    .expe-logo {
+        height: 32px;
+        width: 32px;
+    }
+    .engineer {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .engi {
+        height: 48px;
+        width: 233px;
+    }
+    .date {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        height: 20px;
+        width: 170px;
+    }
+    .logo-title-youtube {
+        height: 48px;
+        width: 295px;
+    }
+    .big-me {
+        height: 1278px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-me {
+        height: 1198px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-me-pic {
+        height: 374px;
+        width: 343px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .about-me-pic {
+        height: 366px;
+        width: 320px;
+        align-items: start;
+        justify-content: start;
+    }
+    .about-me {
+        height: 72px;
+        width: 343px;
+        display: flex;
+    }
+    #about {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    #me {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .about-me-whole {
+        height: 812px;
+        width: 343px;
+    }
+    .about-me-pra {
+        height: 712px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pra10{
+        height: 216px;
+        width: 343px;
+    }
+    .pra2 {
+        height: 264px;
+        width: 343px;
+    }
+    .pra3 {
+        height: 192px;
+        width: 343px;
+    }
+    .detail-pra {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        height: 216px;
+    }
+    .big-testimonial {
+        height: 1370px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-testimonal {
+        height: 1290px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimoial {
+        height: 72px;
+        width: 343px;
+    }
+    #my {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+        color: black;
+    }
+    #testimonial {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .bottom-designer {
+        height: 1218px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .designer {
+        height: 366px;
+        width: 303px;
+    }
+    .big-contact {
+        height: 944px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-contact {
+        height: 864px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .first{
+        height: 56px;
+        width: 343px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .second {
+        height: 56px;
+        width: 343px;
+    }
+    .third {
+        height: 56px;
+        width: 343px;
+    }
+    .fourth {
+        height: 140px;
+        width: 343px;
+    }        
+    .get-in-touch {
+        height: 130px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hehe {
+        height: 56px;
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .inside-ask-section {
+        height: 550px;
+        width: 341px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ask-section {
+        height: 552px;
+        width: 343px;
+    }
+    .contact-name {
+        height: 20px;
+        width: 295px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .Your-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Email {
+        height: 20px;
+        width: 295px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .Your-website {
+        height: 20px;
+        width: 295px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .How-can {
+        height: 108px;
+        width: 295px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .big-talk {
+        height: 312px;
+        width: 343px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-talk {
+        height: 312px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-talk {
+        height: 76px;
+        width: 343px;
+    }
+    #for {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    #talk {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    #special {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .middle-talk {
+        height: 72px;
+        width: 343px;
+    }
+    #seek {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .down {
+        height: 60px;
+        width: 343px;
+    }
+    .number1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        height: 24px;
+        width: 343px;
+    }
+    .number1 {
+        color: black;
+    }
+    .upper {
+        height: 192px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer {
+        height: 80px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo {
+        height: 40px;
+        width: 343px;
+        display: flex;
+    }
+    .footer-logo1 {
+        height: 40px;
+        width: 139px;
+        margin: 0;
+    }
+    #footer-logo {
+        height: 24px;
+        width: 16px;
+    }
+    #Personal {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .Myself {
+        height: 40px;
+        width: 145px;
+    }
+    #Myself {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    #MySelf1 {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .big-project {
+        height: 2549px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-project {
+        height: 2469px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .haha {
+        height: 2377px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Project {
+        height: 749px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Project1 {
+        height: 749px;
+        width: 343px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pro-pic {
+        height: 397px;
+        width: 343px;
+    }
+    .list-project {
+        height: 324px;
+        width: 343px;
+    }
+    .number {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    .PROJECT-TITLE {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24px;
+    }
+    .project-pra {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    #my1 {
+        color: white;
+    }
+    .big-skill {
+        height: 1100px;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-skill {
+        height: 1050px;
+        width: 343px;
+        display: flex;
+    }
+    .my-skills {
+        height: 72px;
+        width: 343px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    #skills {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
+    }
+    .skills-with-logo {
+        width: 343px;
+        height: 950px;
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-logo1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .logo-back {
+        height: 160px;
+        width: 161px;
+    }
 }
