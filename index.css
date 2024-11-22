@@ -102,7 +102,7 @@ header {
 }
 .big-container {
     height: 716px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +215,7 @@ header {
 }
 .big-skill {
     height: 728px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +281,7 @@ header {
 }
 .big-experience {
     height: 956px;
-    width: 1440px;
+    width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -400,7 +400,7 @@ header {
 }
 .big-me {
     height: 692px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,7 +472,7 @@ header {
 }
 .big-project {
     height: 1824px;
-    width: 1440px;
+    width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -572,7 +572,7 @@ header {
 }
 .big-testimonial {
     height: 714px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -698,7 +698,7 @@ header {
 }
 .big-contact {
     height: 604px;
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,6 +707,8 @@ header {
     height: 484px;
     width: 1280px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ask-section {
     height: 484px;
@@ -767,17 +769,33 @@ header {
     justify-content: space-between;
 }
 .contact-facebook {
-    height: 56px;
-    width: 56px;
+    height: 52px;
+    width: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     border-radius: 5px;
+    border: 2px solid black;
+}
+.contact-facebook:hover {
+    background-color: black;
+}
+.contact-red:hover {
+    background-color: black;
 }
 #contact-facebook {
     height: 20px;
     width: 20px;
+}
+.icon-container {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
 }
 .Get-In-Touch {
     height: 56px;
@@ -788,6 +806,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.Get-In-Touch:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+.Get-In-Touch:hover #Get-In-Touch {
+    color: black;
 }
 #Get-In-Touch {
     font-size: 20px;
@@ -914,11 +939,12 @@ header {
 }
 footer {
     height: 100px;
-    width: 1440px;
+    width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .footer-logo {
     height: 52px;
@@ -973,7 +999,44 @@ footer {
     color: white;
     margin: 0;
 }
-@media only screen and (max-width: 375px) {
+.input {
+    height: 50px;
+    width: 492px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asd {
+    position: absolute;
+    top: -20px;
+}
+.text {
+    position: relative;
+}
+.text1 {
+    position: relative;
+}
+.asd {
+    position: absolute;
+}
+.input1 {
+    width: 492px;
+    height: 134px;
+}
+textarea {
+    height: 140px;
+    width: 500px;
+    resize: none;
+}
+.new {
+    height: 56px;
+    width: 500px;
+}
+.new1 {
+    height: 100px;
+    width: 500px;
+}
+@media only screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
@@ -981,11 +1044,14 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 375px;
+        width: 100vw;
     }
     main {
-        width: 375px;
-
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .Resume {
         display: none;
@@ -995,7 +1061,7 @@ footer {
     }
     header {
         height: 72px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1012,21 +1078,28 @@ footer {
     }
     .big-container {
         height: 908px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .small-container {
         height: 828px;
-        width: 343px;
+        width: 100vw;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
     }
+    .header-img-container{
+        display: flex;
+        justify-content: center;
+    }
     .pic-of-mine {
         height: 342px;
-        width: 343px;
+        max-width: 80%;
+        object-fit: cover;
     }
     .container-name {
         height: 408px;
@@ -1074,7 +1147,7 @@ footer {
     }
     .big-experience {
         height: 1466px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1104,7 +1177,7 @@ footer {
     }
     .tech-conpanies {
         height: 1294px;
-        width: 343px;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1163,7 +1236,7 @@ footer {
     }
     .big-me {
         height: 1278px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1175,7 +1248,10 @@ footer {
         flex-direction: column;
         justify-content: space-between;
     }
-
+    .my-projects {
+        height: 95px;
+        width: 100vw;
+    }
     .about-me-pic {
         height: 374px;
         width: 343px;
@@ -1235,7 +1311,7 @@ footer {
     }
     .big-testimonial {
         height: 1370px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1263,7 +1339,7 @@ footer {
     }
     .bottom-designer {
         height: 1218px;
-        width: 343px;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1276,14 +1352,14 @@ footer {
     }
     .big-contact {
         height: 944px;
-        width: 375px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .small-contact {
         height: 864px;
-        width: 343px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -1319,8 +1395,8 @@ footer {
         justify-content: space-between;
     }
     .inside-ask-section {
-        height: 550px;
-        width: 341px;
+        height: 600px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -1426,7 +1502,7 @@ footer {
     }
     footer {
         height: 80px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1466,7 +1542,7 @@ footer {
     }
     .big-project {
         height: 2549px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1529,7 +1605,7 @@ footer {
     }
     .big-skill {
         height: 1100px;
-        width: 375px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1572,5 +1648,22 @@ footer {
     .logo-back {
         height: 160px;
         width: 161px;
+    }
+    .gmail {
+        height: 30px;
+        width: 343px;
+    }
+    .pic-projects {
+        height: 397px;
+        width: 343px;
+    }
+    input {
+        width: 100%;
+    }
+    .new {
+        width: 100%;
+    }
+    #new {
+        width: 100%;
     }
 }
