@@ -1087,7 +1087,7 @@ footer {
         height: 72px;
         width: 343px;
     }
-    #my {
+    #my1 {
         font-size: 28px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 400;
@@ -1100,6 +1100,7 @@ footer {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 32px;
         color: white;
+
     }
     .tech-conpanies {
         height: 1294px;
@@ -1517,6 +1518,11 @@ footer {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+    }
+    #project {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 32px;
     }
     #my1 {
         color: white;
